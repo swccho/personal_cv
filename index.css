@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --blue: #1e90ff;
+    --black: #0a0406;
+    --white: #ffffff;
+    --gray-100:#959398;
+    --gray-ish:#cfc8c8;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--black);
+}
+/*Left Side*/
+.container .left-side{
+    background-color: var(--white);
+    width: 250px;
+}
+.container .left-side .image{
+    width: 100%;
+    height: 300px;
+}
+.container .left-side .image img{
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    object-fit: cover;
+}
+.container .left-side .info-wrapper{
+    padding: 15px;
+}
+.container .left-side .info-wrapper .name{
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--black);
+}
+.container .left-side .info-wrapper .profession{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black);
+}
+.container .left-side .info-wrapper .info-title{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+}
+.container .left-side .info-wrapper .info-value{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--black);
+}
+.container .left-side .info-wrapper .each-link{
+    margin-top: 10px;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .left-side .info-wrapper .each-link .icon{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--black);
+    margin-right: 10px;
+}
+.container .left-side .info-wrapper .each-link .text a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--black);
+    position: relative;
+    top: -2px;
+}
+.container .left-side .info-wrapper .skill-section .label-title{
+    display: block;
+    width: 100%;
+    background-color:var(--black);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    padding:6px 25px;
+}
+/*Right Side*/
+.container .right-side{
+    width:calc(100% - 252px);
+    background-color:var(--black);
+    min-height: 100vh;
+    height: 100%;
+    color: #fff;
+    padding: 30px;
+}
+.container .right-side .label-title{
+    border-bottom:3px solid var(--gray-100);
+    min-width: 180px;
+    text-align: left;
+    padding: 10px 0;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    text-transform: uppercase;
+}
+.container .right-side .description{
+    margin-top: 30px;
+    text-align: justify-all;
+    color: var(--gray-ish);
+    font-size: 14px;
+    font-weight: 500;
+}
